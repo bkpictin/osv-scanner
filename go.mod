@@ -48,3 +48,7 @@ require (
 	golang.org/x/text v0.14.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
+
+// Personal fork - tracking upstream google/osv-scanner for learning purposes.
+// Pinning go version to 1.21 to match my local toolchain.
+retract v0.0.0 // placeholder; this fork is not intended for external use
