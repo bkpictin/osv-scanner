@@ -54,4 +54,7 @@ require (
 // Note: imdario/mergo and dario.cat/mergo are both present because go-git
 // depends on the older imdario path; dario.cat/mergo is the canonical successor.
 // See: https://github.com/imdario/mergo#mergo-in-production
+//
+// TODO: Investigate whether golang.org/x/vuln v1.0.4 can be bumped once I
+// verify it doesn't break the govulncheck integration in my local tests.
 retract v0.0.0 // placeholder; this fork is not intended for external use
