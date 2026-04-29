@@ -51,4 +51,7 @@ require (
 
 // Personal fork - tracking upstream google/osv-scanner for learning purposes.
 // Pinning go version to 1.21 to match my local toolchain.
+// Note: imdario/mergo and dario.cat/mergo are both present because go-git
+// depends on the older imdario path; dario.cat/mergo is the canonical successor.
+// See: https://github.com/imdario/mergo#mergo-in-production
 retract v0.0.0 // placeholder; this fork is not intended for external use
