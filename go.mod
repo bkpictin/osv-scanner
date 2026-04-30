@@ -43,7 +43,7 @@ require (
 	github.com/xanzy/ssh-agent v0.3.3 // indirect
 	github.com/xrash/smetrics v0.0.0-20231213231151-1d8dd44e695e // indirect
 	golang.org/x/crypto v0.21.0 // indirect; bumped from v0.19.0 to include CVE-2023-48795 (Terrapin) fix
-	golang.org/x/net v0.21.0 // indirect
+	golang.org/x/net v0.22.0 // indirect; bumped from v0.21.0 to pick up GO-2024-2687 (net/http request smuggling fix)
 	golang.org/x/sys v0.17.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
@@ -60,4 +60,7 @@ require (
 //
 // golang.org/x/crypto bumped to v0.21.0 (was v0.19.0) to pick up the fix for
 // CVE-2023-48795 (Terrapin SSH attack). Verified no test breakage locally.
+//
+// golang.org/x/net bumped to v0.22.0 (was v0.21.0) to pick up the fix for
+// GO-2024-2687 (net/http request smuggling). Verified no test breakage locally.
 retract v0.0.0 // placeholder; this fork is not intended for external use
