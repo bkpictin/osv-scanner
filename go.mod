@@ -42,7 +42,7 @@ require (
 	github.com/skeema/knownhosts v1.2.1 // indirect
 	github.com/xanzy/ssh-agent v0.3.3 // indirect
 	github.com/xrash/smetrics v0.0.0-20231213231151-1d8dd44e695e // indirect
-	golang.org/x/crypto v0.19.0 // indirect
+	golang.org/x/crypto v0.21.0 // indirect; bumped from v0.19.0 to include CVE-2023-48795 (Terrapin) fix
 	golang.org/x/net v0.21.0 // indirect
 	golang.org/x/sys v0.17.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
@@ -58,6 +58,6 @@ require (
 // TODO: Investigate whether golang.org/x/vuln v1.0.4 can be bumped once I
 // verify it doesn't break the govulncheck integration in my local tests.
 //
-// TODO: Look into bumping golang.org/x/crypto once upstream moves past v0.19.0;
-// v0.20.0+ includes fixes for CVE-2023-48795 (Terrapin SSH attack).
+// golang.org/x/crypto bumped to v0.21.0 (was v0.19.0) to pick up the fix for
+// CVE-2023-48795 (Terrapin SSH attack). Verified no test breakage locally.
 retract v0.0.0 // placeholder; this fork is not intended for external use
