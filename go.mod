@@ -57,4 +57,7 @@ require (
 //
 // TODO: Investigate whether golang.org/x/vuln v1.0.4 can be bumped once I
 // verify it doesn't break the govulncheck integration in my local tests.
+//
+// TODO: Look into bumping golang.org/x/crypto once upstream moves past v0.19.0;
+// v0.20.0+ includes fixes for CVE-2023-48795 (Terrapin SSH attack).
 retract v0.0.0 // placeholder; this fork is not intended for external use
